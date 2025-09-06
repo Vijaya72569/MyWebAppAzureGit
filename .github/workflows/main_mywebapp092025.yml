@@ -12,12 +12,9 @@ on:
 jobs:
   build:
     runs-on: windows-latest
-    permissions:
-      contents: read
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v4
@@ -25,29 +22,26 @@ jobs:
           dotnet-version: '8.x'
 
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        run: dotnet build ./WebAppAureGithub/WebAppAureGithub.csproj --configuration Release
 
-      - name: Publish with dotnet
-        run: dotnet publish --configuration Release --output ./publish
+      - name: dotnet publish
+        run: dotnet publish ./WebAppAureGithub/WebAppAureGithub.csproj -c Release -o "${{env.DOTNET_ROOT}}/myapp"
 
-      - name: Upload artifact for deployment
+      - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
-          name: dotnet-app
-          path: ./publish
+          name: .net-app
+          path: ${{env.DOTNET_ROOT}}/myapp
 
   deploy:
     runs-on: windows-latest
     needs: build
-    permissions:
-      id-token: write
-      contents: read
 
     steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
-          name: dotnet-app
+          name: .net-app
 
       - name: Login to Azure
         uses: azure/login@v2
@@ -59,6 +53,6 @@ jobs:
         with:
           app-name: 'mywebapp092025'
           slot-name: 'Production'
-          package: ./publish
+          package: ${{env.DOTNET_ROOT}}/myapp
 
-          
+
