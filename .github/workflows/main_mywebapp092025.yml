@@ -1,52 +1,53 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and Deploy .NET 8 Web App to Azure
+name: Build and Deploy .NET Core 8 Web App to Azure
 
 on:
   push:
     branches:
-      - main
-  workflow_dispatch:
+      - main  # Trigger on push to main branch
+  workflow_dispatch: # Optional: allows manual trigger
 
 jobs:
   build-and-deploy:
     runs-on: windows-latest
 
     steps:
-    # 1. Checkout the repo
-    - name: 'Checkout GitHub Repo'
+    # 1️⃣ Checkout the repository
+    - name: Checkout code
       uses: actions/checkout@v3
 
-    # 2. Setup .NET 8 SDK
-    - name: 'Setup .NET 8 SDK'
+    # 2️⃣ Setup .NET
+    - name: Setup .NET 8 SDK
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 8.0.x
+        dotnet-version: '8.0.x'
 
-    # 3. Login to Azure using service principal
-    - name: 'Login via Azure CLI'
+    # 3️⃣ Restore NuGet packages
+    - name: Restore dependencies
+      run: dotnet restore WebAppAureGithub/WebAppAureGithub.csproj
+
+    # 4️⃣ Build the project
+    - name: Build
+      run: dotnet build WebAppAureGithub/WebAppAureGithub.csproj --configuration Release
+
+    # 5️⃣ Publish the project (output to ./publish)
+    - name: Publish
+      run: dotnet publish WebAppAureGithub/WebAppAureGithub.csproj --configuration Release --output ./publish
+
+    # 6️⃣ Login to Azure using AZURE_CREDENTIALS
+    - name: Azure Login
       uses: azure/login@v2
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-    # 4. Restore NuGet packages
-    - name: 'Restore NuGet packages'
-      run: dotnet restore WebAppAureGithub/WebAppAureGithub.csproj
-
-    # 5. Build the project
-    - name: 'Build .NET Project'
-      run: dotnet build WebAppAureGithub/WebAppAureGithub.csproj --configuration Release
-
-    # 6. Publish the project (creates deployable folder)
-    - name: 'Publish .NET Project'
-      run: dotnet publish WebAppAureGithub/WebAppAureGithub.csproj --configuration Release --output ./publish
-
-    # 7. Deploy to Azure Web App
-    - name: 'Deploy to Azure Web App'
+    # 7️⃣ Deploy to Azure Web App
+    - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'YourWebAppName' # <- Replace with your Azure Web App name
+        app-name: 'mywebapp092025'  # <-- Replace with your actual Web App name
         package: ./publish
+
 
 
