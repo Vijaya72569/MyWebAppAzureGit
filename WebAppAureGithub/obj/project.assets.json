@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\AzureGitHub2\\WebAppAureGithub\\WebAppAureGithub.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\Pull2\\MyWebAppAzureGit\\WebAppAureGithub\\WebAppAureGithub.csproj",
       "projectName": "WebAppAureGithub",
-      "projectPath": "C:\\Users\\DELL\\Desktop\\AzureGitHub2\\WebAppAureGithub\\WebAppAureGithub.csproj",
+      "projectPath": "C:\\Users\\DELL\\Desktop\\Pull2\\MyWebAppAzureGit\\WebAppAureGithub\\WebAppAureGithub.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\Desktop\\AzureGitHub2\\WebAppAureGithub\\obj\\",
+      "outputPath": "C:\\Users\\DELL\\Desktop\\Pull2\\MyWebAppAzureGit\\WebAppAureGithub\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
