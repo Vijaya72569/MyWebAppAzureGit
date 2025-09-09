@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebAppAureGithub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f65d0b27ea6240387d51ce4e5dc60d12969d358")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+acc2a66e34d9af55c909d36ebe81016af2792460")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebAppAureGithub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebAppAureGithub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

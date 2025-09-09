@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\DELL\\Desktop\\AzureGitHub2\\WebAppAureGithub\\",
+  "WorkspaceRootPath": "C:\\Users\\DELL\\Desktop\\Pull3\\MyWebAppAzureGit\\WebAppAureGithub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C1D8BC60-B688-4418-9E2B-40BC407AB29D}|WebAppAureGithub.csproj|c:\\users\\dell\\desktop\\azuregithub2\\webappauregithub\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C1D8BC60-B688-4418-9E2B-40BC407AB29D}|WebAppAureGithub.csproj|c:\\users\\dell\\desktop\\pull3\\mywebappazuregit\\webappauregithub\\views\\vijaya\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C1D8BC60-B688-4418-9E2B-40BC407AB29D}|WebAppAureGithub.csproj|solutionrelative:views\\vijaya\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1D8BC60-B688-4418-9E2B-40BC407AB29D}|WebAppAureGithub.csproj|c:\\users\\dell\\desktop\\pull3\\mywebappazuregit\\webappauregithub\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C1D8BC60-B688-4418-9E2B-40BC407AB29D}|WebAppAureGithub.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1D8BC60-B688-4418-9E2B-40BC407AB29D}|WebAppAureGithub.csproj|c:\\users\\dell\\desktop\\pull3\\mywebappazuregit\\webappauregithub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1D8BC60-B688-4418-9E2B-40BC407AB29D}|WebAppAureGithub.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,15 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\AzureGitHub2\\WebAppAureGithub\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Pull3\\MyWebAppAzureGit\\WebAppAureGithub\\Views\\Vijaya\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Vijaya\\Index.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Pull3\\MyWebAppAzureGit\\WebAppAureGithub\\Views\\Vijaya\\Index.cshtml",
+              "RelativeToolTip": "Views\\Vijaya\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-09T12:23:21.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Pull3\\MyWebAppAzureGit\\WebAppAureGithub\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Pull3\\MyWebAppAzureGit\\WebAppAureGithub\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T10:36:59.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Pull3\\MyWebAppAzureGit\\WebAppAureGithub\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\DELL\\Desktop\\AzureGitHub2\\WebAppAureGithub\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Pull3\\MyWebAppAzureGit\\WebAppAureGithub\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
